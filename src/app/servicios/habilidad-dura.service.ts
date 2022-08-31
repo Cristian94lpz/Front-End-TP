@@ -8,7 +8,8 @@ import { HabilidadDura } from '../models/habilidad-dura';
 })
 export class HabilidadDuraService {
 
-  portfolioURL = 'http://localhost:8080/portfolio/';
+  //portfolioURL = 'http://localhost:8080/portfolio/';
+  portfolioURL = 'https://safe-chamber-14222.herokuapp.com/portfolio/';
 
   constructor(private httpClient:HttpClient) { }
 

@@ -14,8 +14,8 @@ import { Validators } from '@angular/forms';
 })
 export class AcercaMiComponent implements OnInit {
   
-  acerca : Acercami = new Acercami('Descripcion','\\assets\\img\\logo\\imagen-mia.jpg');
-  acercami :Acercami = new Acercami('','\\assets\\img\\logo\\imagen-mia.jpg');
+  acerca : Acercami = new Acercami('Descripcion','\\assets\\img\\logo\\foto-mia.jpg');
+  acercami :Acercami = new Acercami('','\\assets\\img\\logo\\foto-mia.jpg');
   form:FormGroup;
 
   constructor(private acercaService:AcercaService,private router:Router,private rutaActiva:ActivatedRoute,private FormBuilder:FormBuilder) {
@@ -30,7 +30,7 @@ export class AcercaMiComponent implements OnInit {
   private buildForm(){
     this.form = this.FormBuilder.group({
      descripcion:['',[Validators.required,Validators.maxLength(255)]],
-     fotourl:['\\assets\\img\\logo\\imagen-mia.jpg']
+     fotourl:['\\assets\\img\\logo\\foto-mia.jpg']
      
     })
   }

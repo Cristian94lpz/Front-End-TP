@@ -8,12 +8,13 @@ import { Usuario } from '../models/usuario';
 })
 export class UsuarioService {
 
-  usuarioURL = 'http://localhost:8080/hola/'
+ // portfolioURL = 'http://localhost:8080/hola/'
+ portfolioURL = 'https://safe-chamber-14222.herokuapp.com/hola/';
 
   constructor(private httpClient:HttpClient) { }
 
   public verificar(Usuario:Usuario):Observable<any>{
-    return this.httpClient.post<any>(this.usuarioURL + 'iniciar-sesion',Usuario);
+    return this.httpClient.post<any>(this.portfolioURL + 'iniciar-sesion',Usuario);
 
   }
 
