@@ -18,7 +18,7 @@ export class InicioSesionComponent implements OnInit {
 
   autenticacion:boolean = false;
   
-
+  //usuario: cristian Contraseña : cristian00 
   constructor(private usuarioService:UsuarioService,private router:Router,private FormBuilder:FormBuilder) { }
 
  
